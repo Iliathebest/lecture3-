@@ -3,12 +3,13 @@
 
 Console.WriteLine("Введите пятизначное число");
 
-string n= Console.ReadLine(); 
 
- void CheckingNumber(string n)
- {
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
 
-  if( n[0]==n[4]&&n[1]==n[3])
+ 
+int Lenght = anyNumberText.Length;
+  if(anyNumberText[0]==anyNumberText[4]&&anyNumberText[1]==anyNumberText[3] )
    {
     Console.WriteLine("Является полиндромом");
     
@@ -18,6 +19,6 @@ string n= Console.ReadLine();
       Console.WriteLine("Не является пoлиндромом");
    }
 
- }
- CheckingNumber(n);
+ 
+
  
